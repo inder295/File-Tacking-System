@@ -15,7 +15,7 @@ const track=(req,res)=>{
         fs.access(filePath, fs.constants.F_OK, (err) => {
             if (err) {
                 console.error('File not found:', fileName);
-                return res.status(404).json({ error: 'File not found.' });
+         return res.status(404).json({ error: 'File not found.' });
             }
     
            
